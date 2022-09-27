@@ -4,7 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+document.body.style.backgroundColor = "#191919";
+document.body.style.color = "#F2F2F2";
+document.body.style.fontFamily = "Roboto, Helvetica, Arial, sans-serif";
 root.render(
   <React.StrictMode>
     <App />
