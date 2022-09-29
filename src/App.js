@@ -20,19 +20,19 @@ function App() {
     {title: "feafe", date: "11/16/5252", time:"16:31PM"},
   ]
 
-  // const getTodos = () => {
-  //   fetch('https://1o7cy52iw3.execute-api.us-east-2.amazonaws.com/tasks')
-  //   .then((res) => res.json())
-  //   .then((res) => {
-  //     setTodos(res.Items);
-  //   },
-  //   (error) => { alert(error); console.log(error); }
-  //   )};
+  const getTodos = () => {
+    fetch('https://1o7cy52iw3.execute-api.us-east-2.amazonaws.com/tasks')
+    .then((res) => res.json())
+    .then((res) => {
+      setTodos(res.Items);
+      console.log(todos)
+    },
+    (error) => { alert(error); console.log(error); }
+    )};
 
-  // useEffect(() => {
-  //   getTodos()
-  // },[]);
-  // console.log(todos)
+  useEffect(() => {
+    getTodos();
+  },[]);
 
   const handleSubmit = () => {
     fetch('https://1o7cy52iw3.execute-api.us-east-2.amazonaws.com/tasks', {
