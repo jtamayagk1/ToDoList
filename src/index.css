@@ -1,14 +1,99 @@
 body {
   margin: 0;
   padding-top: 40px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* background-color: #191919 !important; */
+  /* Created with https://www.css-gradient.com */
+  min-height: 100vh !important;
+  background-image: linear-gradient(19deg, #34093f 0%, #200644 50%, #141314 100%);
+  color: #F2F2F2 !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.todocontainer{
+  border-radius: 15px;
+}
+
+.submitbtn{
+  background-image: linear-gradient(90deg, #ffba3b, #ff5125 ) !important;
+  border: 1px solid black !important;
+  
+}
+
+.submitbtn:focus, .submitbtn.focus{
+  background-image: linear-gradient(90deg, #ff893b, #ff2525 ) !important;
+  border: 1px solid black !important;
+  box-shadow: 0 0 5px 5px rgba(236, 54, 30, 0.5) !important;
+}
+
+.todorow{
+  
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  transition: background-color .5s;
+}
+
+.todorow:hover{
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(202, 202, 202, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  transition: background-color .5s;
+}
+
+.title{
+  color: white;
+}
+
+.subtext{
+  color:#ececec !important;
+}
+
+.btncol{
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+}
+
+button{
+  background-color: #19191900;
+  border: none;
+  margin-top: 5px !important;
+}
+
+.checkIcon{
+  background-color: white;
+  border-radius: 9999px;
+  transition: background-color .5s !important;
+}
+
+.checkIcon:hover{
+  background-color: #4beb2b;
+  transition: background-color .75s !important;
+}
+
+.editIcon{
+  background-color: white;
+  border-radius: 9999px;
+  transition: background-color .5s !important;
+}
+
+.editIcon:hover{
+  background-color: #faea06;
+  transition: background-color .75s !important;
 }
